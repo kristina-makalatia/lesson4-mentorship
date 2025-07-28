@@ -1,0 +1,99 @@
+.header-wraper {
+  width: 1170px;
+  background-color: lightblue;
+  margin: 0 auto;
+  padding: 30px;
+}
+.navigation {
+  display: inline-block;
+}
+.nav-li {
+  display: inline-block;
+}
+
+.header-main-container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.wraper {
+  width: 400px;
+  height: 400px;
+  background-color: lightgray;
+  position: relative;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  z-index: 1;
+}
+.box2 {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  z-index: 2;
+}
+
+.title-image {
+  position: absolute;
+  top: 50px;
+  right: 200px;
+  color: red;
+  font-size: 35px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.chat-icon-image {
+  height: 100px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
+.box-new {
+  width: 600px;
+  height: 600px;
+  border: 2px solid green;
+  position: relative;
+  background-color: lightpink;
+
+  /* transition-property: all;
+  transition-duration: 3s;
+  transition-timing-function: ease-in;
+  transition-delay: 2s; */
+  transition: all 3s ease-in 2s;
+}
+.block {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 2s;
+}
+
+/* .box-new:hover {
+  background-color: lightgreen;
+}
+.block:hover {
+  background-color: blue;
+  width: 300px;
+} */
+
+.box-new:hover .block {
+  background-color: yellow;
+}
